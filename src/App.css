@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background:#f5f5f5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  width:90%;
+  max-width:700px;
+  margin:40px auto;
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 0 15px rgba(0,0,0,.2);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+  text-align:center;
+  margin-bottom:25px;
+  color:#333;
 }
-
-.App-link {
-  color: #61dafb;
+.input-section{
+  display:flex;
+  gap:10px;
+  margin-bottom:25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  flex:1;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  font-size:16px;
+}
+button{
+  padding:12px 18px;
+  border:none;
+  cursor:pointer;
+  border-radius:5px;
+  color:white;
+  font-size:15px;
+}
+button:hover{
+  opacity:.9;
+}
+.input-section button{
+  background:#007bff;
+}
+.note-card{
+  background:#fafafa;
+  border-left:5px solid #007bff;
+  margin-bottom:15px;
+  padding:15px;
+  border-radius:6px;
+}
+.note-card p{
+  margin-bottom:15px;
+  word-wrap:break-word;
+}
+.buttons{
+  display:flex;
+  gap:10px;
+}
+.edit{
+  background:#28a745;
+}
+.delete{
+  background:#dc3545;
+}
+.empty{
+  text-align:center;
+  color:gray;
+  font-size:18px;
 }
